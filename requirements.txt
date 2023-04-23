@@ -1,0 +1,4 @@
+chainladder==0.8.15
+streamlit==1.21.0
+pandas==1.5.3
+IPython==8.12.0
