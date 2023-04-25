@@ -5,7 +5,7 @@ import chainladder as cl
 st.markdown("# Hosting actuarial dashboards in Streamlit")
 st.markdown("Here is a big rectangle of data. We want to get triangles from this rectangle.")
 
-@st.cache_data
+@st.cache_data(ttl=3600*10)
 def get_data():
     return pd.read_csv(
         "https://raw.githubusercontent.com/casact/chainladder-python/master/chainladder/utils/data/clrd.csv"
