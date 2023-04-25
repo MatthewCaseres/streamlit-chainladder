@@ -41,3 +41,5 @@ jobs:
           image: docker.io/actuarial/streamlit-chainladder:main
           name: streamlit-chainladder-name
           location: 'central us'
+          ports: 8501
+          
