@@ -10,8 +10,9 @@ def get_data():
     return pd.read_csv(
         "https://raw.githubusercontent.com/casact/chainladder-python/master/chainladder/utils/data/clrd.csv"
     )
-clrd_df = get_data().head(10)
-clrd_df
+clrd_df = get_data()
+clrd_df_head = clrd_df.head(n)
+clrd_df_head
 st.markdown("""Casualty actuaries create reports with \"loss triangles\". 
 For the triangles we use the [chainladder-python](https://chainladder-python.readthedocs.io/en/latest/intro.html) package. This package is published by the Casualty Actuarial Society and is
 the [most popular open source actuarial project ever](https://www.actuarialopensource.org/).""")
